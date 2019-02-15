@@ -40,11 +40,11 @@ class MyFileManager
     }
 
     /**
-     * Сортировка файлов.
+     * Фильтрация файлов.
      *
      * @return array
      */
-    public function sort()
+    public function filter()
     {
         $files = $this->all();
         $sortFiles = [];

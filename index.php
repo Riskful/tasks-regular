@@ -18,7 +18,7 @@
     $manager = new MyFileManager();
 
     if(!empty($_GET['sort']) && $_GET['sort'] === 'true') {
-        $files = $manager->sort();
+        $files = $manager->filter();
     } else {
         $files = $manager->all();
     }
