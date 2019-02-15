@@ -55,6 +55,8 @@ class MyFileManager
             }
         }
 
+        asort($sortFiles);
+
         return $sortFiles;
     }
 
