@@ -47,17 +47,17 @@ class MyFileManager
     public function filter()
     {
         $files = $this->all();
-        $sortFiles = [];
+        $filterFiles = [];
 
         foreach ($files as $file) {
             if($this->checkExtension($file) && $this->checkName($file)) {
-                $sortFiles[] = $file;
+                $filterFiles[] = $file;
             }
         }
 
-        asort($sortFiles);
+        asort($filterFiles);
 
-        return $sortFiles;
+        return $filterFiles;
     }
 
 
